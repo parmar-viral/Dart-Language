@@ -6,12 +6,14 @@ class Student {
   String? city;
   int? mark;
 
+//parameterized constructure
   Student(int n, String nm, String ct, int m) {
     rno = n;
     name = nm;
     city = ct;
     mark = m;
   }
+  //method
   void input1() {
     print("enter your rollno=");
     rno = int.parse(stdin.readLineSync()!);
@@ -23,6 +25,7 @@ class Student {
     mark = int.parse(stdin.readLineSync()!);
   }
 
+  //method
   void input2() {
     rno = 10;
     name = "scott";
@@ -30,6 +33,7 @@ class Student {
     mark = 510;
   }
 
+  //method to display the information of attributes of student class
   void display() {
     print("rno=$rno");
     print("name=$name");
@@ -52,7 +56,8 @@ void main() {
   s1.mark = 520;
   s1.display();
 
-  print("value to the fields of student class through the input1() method....");
+  print(
+      "value to the fields of student class through the input1() method(input value from user)....");
   s1.input1();
   s1.display();
 
